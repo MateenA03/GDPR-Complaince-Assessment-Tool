@@ -1,0 +1,196 @@
+<!DOCTYPE html>  <!-- HTML5 Document Declaration -->
+<html lang="en">   <!-- Language Is Set To English -->
+<head> <!-- Head Section -->
+  <meta charset="UTF-8" /> <!-- Character Encoding Set To UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>GDPR Compliance Form</title> <!-- Title of the Page -->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Adds Tailwind CSS -->
+  <link rel="stylesheet" href="style.css"/> <!-- Link to External CSS File -->
+</head>
+<body>
+<!-- 3-Step Progress Bar At The Top Of The Page -->
+<div id="progressbar" class="z-50 py-1 px-4"> 
+  <div id="progress-box" class="mx-auto"> 
+    <div id="barstep1" class="barsteps"> <!-- Step 1 Bar -->
+      <span>Step 1</span> 
+      <div id="progress-auth" class="bars h-1 w-16 bg-blue-600 rounded-full transition-all duration-300 ease-in-out"></div>
+    </div>
+    <span>→</span>
+    <div id="barstep2" class="barsteps"> <!-- Step 2 Bar -->
+      <span>Step 2</span>
+      <div id="progress1" class="bars h-1 w-16 bg-gray-300 rounded-full transition-all duration-300 ease-in-out"></div>
+    </div>
+    <span>→</span>
+    <div id="barstep3" class="barsteps"> <!-- Step 3 Bar -->
+      <span>Step 3</span> 
+      <div id="progress2" class="bars h-1 w-16 bg-gray-300 rounded-full transition-all duration-300 ease-in-out"></div>
+    </div>
+  </div>
+</div>
+
+<div id="form-main"> <!-- Main Form Container -->
+
+  <h1 class="title">GDPR Compliance Checker</h1> <!-- Main Title Of The App -->
+
+  <form id="gdprForm"> 
+      <!-- Step 0: User Info Page that asks for the name of the user & email-->
+  <div id="step0">
+    <h2 id="step0-title">Before the assessment begins, Please tell us about yourself:</h2>
+    <div class="info-box">
+      <label for="name" class="info">Full Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="info-box">
+      <label for="email" class="info">Email Address</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <button id="start" type="button" onclick="nextFromAuth()">Start Assessment</button>
+  </div>
+  <!-- Step 1: Article 5 - Data Processing Principles ( Article 5 Page) -->
+<div id="step1" class="step hidden">
+  <h2 id="step1-title"> Article 5: Data Processing Principles</h2> <!-- Step 1 Title -->
+
+  <div id="q1" class="space-y-4">  
+    <div>
+      <label class="questions">  <!-- Question 1 - 6 -->
+        1. Lawfulness, Fairness, and Transparency<br> <!-- Question 1 -->
+        Does your organisation ensure that personal data is processed lawfully, fairly, and in a transparent manner?
+      </label> <!-- Question 1  & Yes/No Buttons-->
+        <label><input type="radio" name="Lawfulness, fairness, and transparency" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Lawfulness, fairness, and transparency" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        2. Purpose Limitation<br> <!-- Question 2 -->
+        Is personal data collected for specified, explicit, and legitimate purposes and not further processed in an incompatible manner?
+      </label> <!-- Question 2  & Yes/No Buttons-->
+        <label><input type="radio" name="Purpose limitation" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Purpose limitation" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        3. Data Minimisation<br> <!-- Question 3 -->
+        Does your organisation collect only the data that is strictly necessary for its purposes?
+      </label> <!-- Question 3  & Yes/No Buttons-->
+        <label><input type="radio" name="Data minimisation" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Data minimisation" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        4. Accuracy<br> <!-- Question 4 -->
+        Are there processes in place to ensure personal data is accurate and kept up to date?
+      </label> <!-- Question 4  & Yes/No Buttons-->
+        <label><input type="radio" name="Accuracy" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Accuracy" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        5. Storage Limitation<br> <!-- Question 5 -->
+        Is personal data retained only for as long as necessary for the purposes it was collected?
+      </label> <!-- Question 5  & Yes/No Buttons-->
+        <label><input type="radio" name="Storage limitation" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Storage limitation" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        6. Integrity and Confidentiality (Security)<br> <!-- Question 6 -->
+        Are technical and organisational measures in place to protect personal data against unauthorised access or loss?
+      </label> <!-- Question 6  & Yes/No Buttons-->
+        <label><input type="radio" name="Integrity and confidentiality" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Integrity and confidentiality" value="No"> No</label>
+    </div>
+  </div>
+
+  <div id="nextbutton-box"> <!-- Next Button Box -->
+    <button id="nextbutton" type="button" onclick="nextStep()">Next →</button>
+  </div>
+</div>
+
+<!-- Step 2: Article 6 - Lawfulness of Processing (Atricle 6 Page) -->
+<div id="step2" class="step hidden">
+  <h2 id="step2-title"> Article 6: Lawfulness of Processing</h2> <!-- Step 2 Title -->
+
+  <div class="space-y-4">
+    <div>
+      <label class="questions"> <!-- Question 7 - 13 -->
+        7. Lawful Basis<br> <!-- Question 7 -->
+        Can your organisation demonstrate a lawful basis for each category of personal data processed?
+      </label> <!-- Question 7  & Yes/No Buttons-->
+        <label><input type="radio" name="Lawful basis" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Lawful basis" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        8. Consent<br> <!-- Question 8 -->
+        Where consent is used as a basis, is it freely given, specific, informed, and unambiguous?
+      </label> <!-- Question 8  & Yes/No Buttons-->
+        <label><input type="radio" name="Consent" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Consent" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        9. Contractual Necessity<br> <!-- Question 9 -->
+        Is data processing necessary to fulfil a contract with the data subject?
+      </label> <!-- Question 9  & Yes/No Buttons-->
+        <label><input type="radio" name="Contractual necessity" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Contractual necessity" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        10. Legal Obligation<br> <!-- Question 10 -->
+        Is data processed to comply with legal or regulatory obligations?
+      </label> <!-- Question 10  & Yes/No Buttons-->
+        <label><input type="radio" name="Legal obligation" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Legal obligation" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        11. Vital Interests<br> <!-- Question 11 -->
+        Is personal data processed to protect someones vital interests (e.g., life-saving situations)?
+      </label> <!-- Question 11  & Yes/No Buttons-->
+        <label><input type="radio" name="Vital interests" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Vital interests" value="No"> No</label>
+    </div>
+
+    <div>
+      <label class="questions">
+        12. Public Task or Official Authority<br> <!-- Question 12 -->
+        Is processing carried out as part of a task in the public interest or official duty?
+      </label> <!-- Question 12  & Yes/No Buttons-->
+        <label><input type="radio" name="Public task or official authority" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Public task or official authority" value="No"> No</label> 
+    </div>
+
+    <div>
+      <label class="questions">
+        13. Legitimate Interests<br> <!-- Question 13 -->
+        If relying on legitimate interests, has a balancing test been carried out?
+      </label> <!-- Question 13  & Yes/No Buttons-->  
+        <label><input type="radio" name="Legitimate interests" value="Yes" required> Yes</label>
+        <label><input type="radio" name="Legitimate interests" value="No"> No</label>
+    </div>
+  </div>
+
+  <div id="button-box">  <!-- Button Box -->
+    <button id="back-button" type="button" onclick="prevStep()">← Back</button>
+    <button id="submit-button" type="submit">Generate Report</button>
+  </div>
+</div>    
+      <div id="successMessage" class="hidden">  <!-- Success Message Box -->
+        <p>✅ Your report has been generated and emailed successfully!</p>
+      </div>      
+    </form>
+  </div>
+
+  <script src="script.js"></script>  <!-- Link to External JavaScript File -->
+</body>
+</html>

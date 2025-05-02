@@ -1,0 +1,14 @@
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\bin\Debug\netcoreapp3.1\analysis.exe
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\bin\Debug\netcoreapp3.1\analysis.deps.json
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\bin\Debug\netcoreapp3.1\analysis.runtimeconfig.json
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\bin\Debug\netcoreapp3.1\analysis.runtimeconfig.dev.json
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\bin\Debug\netcoreapp3.1\analysis.dll
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\bin\Debug\netcoreapp3.1\analysis.pdb
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.csproj.AssemblyReference.cache
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.AssemblyInfoInputs.cache
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.AssemblyInfo.cs
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.csproj.CoreCompileInputs.cache
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.dll
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.pdb
+C:\Users\matee\OneDrive - MMU\Documents\Final Year\Synoptic Project\gdpr-dashboard\analysis\obj\Debug\netcoreapp3.1\analysis.genruntimeconfig.cache

@@ -1,0 +1,187 @@
+/* Hides elements using display:None */
+.hidden { 
+    display: none; 
+}
+/* Styles the body: centers everything and sets background, font, ect */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfcccc;
+    color: #0f397b;
+    min-height: screen;
+    padding: 0px 20px;
+}
+/* For progress bar steps */
+#progress-box {
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: bold;
+    width: 100%;
+}
+/* Fixed bar at the top of the page for step progress */
+#progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #aea9a9;
+    box-shadow: 0 0 0 2px #a59d9d36
+}
+/* The Blue Part Of The Progress Bar */
+.bars {
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    background-color: #072b7e;
+}
+/* The Steps in progres bar  */
+.barsteps {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+/* The Main form Page with background, shadow, ect */
+#form-main {
+    background-color: #b6b8bb;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px #595a61;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 70px;
+}
+/* The Title of the form Styling */
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #031e44;
+    text-align: center;
+    margin: 1rem 0;
+}
+/* Transition */
+.step { 
+    transition: all 0.3s ease-in-out; 
+}
+/* Label for input fields */
+.info {
+    display: block;
+    font-size: medium;
+    margin-bottom: 3px;
+}
+/* Label for input fields */
+.info-box {
+    margin-bottom: 10px;
+}
+/* Styling for input fields */
+.input {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #080e53;
+    border-radius: 0.375rem;
+    outline: none;
+}
+/* Styling for name and email fields */
+#name, #email {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #0c178b;
+    padding: 5px;
+}
+/* Focus effect */
+.input:focus {
+    box-shadow: 0 0 0 2px #3b82f680;
+}
+/* Start button styling */
+#start {
+    background-color: #0f397b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+/* Hover effect for Start button */
+#start:hover {
+    background-color: #0c3371;
+}
+/* Step section title style */
+div h2 {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+/* Adds a border under h2 in step blocks */
+#step h2 {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #d1d5db;
+}
+/* Styles for the question text */
+.questions {
+    display: block;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+/* Box for the next button  */
+#nextbutton-box {
+    text-align: right;
+    margin-top: 20px;
+}
+/* Styles for the next button */
+#nextbutton {
+    background-color: #0f397b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+/* Hover effect for the Next button */
+#next-button:hover {
+    background-color: #4999e4;
+}
+/* Box for the back/submit button */
+#button-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* Styles for the back button */
+#back-button {
+    background-color: #0f397b;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+/* Hover effect for the Back button */
+#back-button:hover {
+    background-color: #0c3371;
+}
+/* Styles for the submit button */
+#submit-button {
+    background-color: #0f397b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+/* Hover effect for the Submit button */
+#submit-button:hover {
+    background-color: #0c3371;
+}
+/* Styles for the success message */
+div #successmessage > p {
+    display: none;
+    font-size: medium;
+    color: #0f397b;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
